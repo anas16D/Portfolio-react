@@ -1,0 +1,34 @@
+
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.exe
+*.dll
+*.so
+*.o
+*.a
+
+# Ignore node modules (if using Node.js)
+node_modules/
+
+
+#ignore custom test files
+test.js
+body.js
+token.js
