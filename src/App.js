@@ -1,5 +1,5 @@
 // import video from "./assets/videos/video.mp4";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -12,7 +12,7 @@ import BlogsController from "./pages/blogs/BlogsController";
 const App = () => {
     
     return(
-        <Router>
+        <HashRouter>
             <Navbar />
             <Routes>
                 <Route path="/" element={
@@ -29,7 +29,7 @@ const App = () => {
                 <Route path="/blogs/*" element={<BlogsController />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
-        </Router>
+        </HashRouter>
     )
 }
 export default App;
