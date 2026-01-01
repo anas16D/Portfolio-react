@@ -5,7 +5,7 @@ module.exports = {
     rules: [
       {
         // test: /\.js$/,
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -37,7 +37,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -47,7 +47,7 @@ module.exports = {
   ],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'dist'), // or 'public'
+      directory: path.join(__dirname, 'public'), // or 'public'
     },
     onListening(server) {
     const port = server.server.address().port;

@@ -21,6 +21,9 @@ export default function Navbar() {
           <Link to="/blogs" className="mr-5 hover:text-white text-gray-400">
             Blogs
           </Link>
+          <Link to="/games" className="mr-5 hover:text-white text-gray-400">
+            Games
+          </Link>
         </nav>
         <Link
           to="/contact"

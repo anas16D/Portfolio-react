@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import BlogsController from "./pages/blogs/BlogsController";
+import GamesPage from "./pages/games";
 // import './index.css';
 
 
@@ -28,6 +29,8 @@ const App = () => {
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/blogs/*" element={<BlogsController />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path = '/games' element = {<GamesPage />} />
+                <Route path = '/games/:id' element = {<GamesPage />} />
             </Routes>
         </HashRouter>
     )
