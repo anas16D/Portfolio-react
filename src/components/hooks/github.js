@@ -15,10 +15,11 @@ export const useProjectByUsername = (username) => {
 }
 
 async function fetchUserRepos(username) {
-    return projects; // For local data, you can return the projects directly
+    // return projects; 
     const response = await fetch(`https://api.github.com/users/${username}/repos?sort=created&per_page=100`);
     if (!response.ok) {
-        throw new Error('Network response was not ok');
+        return projects; // For local data, you can return the projects directly
+        // throw new Error('Network response was not ok');
     }
     return response.json();
 }

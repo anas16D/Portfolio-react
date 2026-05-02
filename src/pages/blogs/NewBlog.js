@@ -3,7 +3,7 @@ import CustomEditor from "../../components/CustomEditor"; // adjust path if need
 
 export default function NewBlog() {
   const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
+  const [content, setContent] = useState("WIP: Blog content goes here...");
   const textareaRef = useRef(null);
 
   const wrapSelection = (before, after) => {
@@ -39,11 +39,9 @@ export default function NewBlog() {
         onChange={(e) => setTitle(e.target.value)}
       />
 
-  
-
       <br />
 
-      <CustomEditor saveBlog={saveBlog} />
+      <CustomEditor saveBlog={saveBlog} defaultValue={content} onChange={setContent} />
       <button onClick={() => alert("Submitted")}>Save</button>
     </div>
   );

@@ -7,7 +7,6 @@ import NewBlog from './NewBlog';
 export default function BlogsController() {
   return (
     <>
-    <>hi</>
       <Routes>
         <Route path="/" element={<BlogsList />} />
         <Route path=":id/" element={<Blog />} />

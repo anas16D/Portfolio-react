@@ -34,6 +34,11 @@ module.exports = {
         type: "asset/resource",
       },
 
+      {
+        test: /\.md$/,
+        type: "asset/source",
+      },
+
     ],
   },
   resolve: {
@@ -60,9 +65,8 @@ module.exports = {
     historyApiFallback: true, // Redirect all routes to index.html
   },
   output: {
-  publicPath: '/',
-  // other options
-}
+    publicPath: '', // make asset paths relative, so script src becomes "main.js" instead of "/main.js"
+  }
 
   
 }
