@@ -1,1 +1,1 @@
-{timeTaken=8, headers={}, errorCode=500, statusMessage=Internal Server Error, body="app.master.error.Allocation failed for some SKUs: [{\"skuId\":\"20016637\",\"startSerial\":null,\"endSerial\":null,\"serialNumbers\":[\"862378061616782\"],\"message\":\"Could not allocate inventories. Inventories may not be in correct state for given list\"}]"}
+
