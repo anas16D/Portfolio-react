@@ -4,5 +4,8 @@
   },
   {
     "slug": "FirstPost"
+  },
+  {
+    "slug": "LRU-Cache"
   }
 ]
